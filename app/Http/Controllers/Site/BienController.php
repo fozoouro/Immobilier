@@ -53,7 +53,7 @@ class BienController extends Controller
 
         $biens = $query->orderBy('date_creation', 'desc')->get();
 
-        return view('site.home', compact('biens'));
+        return view('site.bien', compact('biens'));
     }
 
     public function show($id)

@@ -75,6 +75,6 @@
     @endforelse
 </div>
 
-<a href="{{ route('home') }}" class="btn btn-secondary mt-3">← Retour à l’accueil</a>
+<a href="{{ route('bien') }}" class="btn btn-secondary mt-3">← Retour à l’accueil</a>
 
 @endsection

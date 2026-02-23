@@ -29,7 +29,10 @@
         .navbar-nav .nav-link:hover {
             color: #FBBF24 !important; /* accent doré au hover */
         }
-        
+
+        h2, h3, h4, h5 {
+            color: #1E3A8A;
+        }
 
         /* Footer */
         .footer {
@@ -86,7 +89,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('home') }}">🏠 Mon Immobilier</a>
+        <a class="navbar-brand" href="{{ route('acceuil') }}">🏠 Mon Immobilier</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -95,16 +98,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}">Accueil</a>
+                    <a class="nav-link" href="{{ route('acceuil') }}">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Biens</a>
+                    <a class="nav-link" href="{{ route('bien') }}">Biens</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('proprietaire.contact') }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('a-propos') }}">À propos</a>
+                    <a class="nav-link" href="#">À propos</a>
                 </li>
             </ul>
         </div>

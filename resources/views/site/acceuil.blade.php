@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Accueil')
+
 @section('content')
 
 <!-- HERO BANNER FULL WIDTH -->
@@ -104,19 +106,19 @@
 </section>
 
 <!-- SECTION CHIFFRES -->
-<section class="py-5 text-white" style="background:#111;">
+<section class="py-5 text-white" style="background: linear-gradient(to right, #1E3A8A, #3B82F6);">
     <div class="container text-center py-5">
         <div class="row">
             <div class="col-md-4">
-                <h2 class="fw-bold display-5">+150</h2>
+                <h2 class="fw-bold display-5 text-white">+150</h2>
                 <p>Biens gérés</p>
             </div>
             <div class="col-md-4">
-                <h2 class="fw-bold display-5">98%</h2>
+                <h2 class="fw-bold display-5 text-white">98%</h2>
                 <p>Satisfaction client</p>
             </div>
             <div class="col-md-4">
-                <h2 class="fw-bold display-5">10+</h2>
+                <h2 class="fw-bold display-5 text-white">10+</h2>
                 <p>Années d’expérience</p>
             </div>
         </div>
@@ -130,7 +132,7 @@
         <p class="text-muted mb-4">
             Nous sommes prêts à vous accompagner dans chaque étape de votre investissement immobilier.
         </p>
-        <a href="{{ route('home') }}" class="btn btn-dark btn-lg px-5 rounded-pill">
+        <a href="{{ route('bien') }}" class="btn btn-dark btn-lg px-5 rounded-pill">
             Découvrir nos biens
         </a>
     </div>

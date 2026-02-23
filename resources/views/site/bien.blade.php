@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Accueil')
+@section('title', 'bien')
 
 @section('content')
 
@@ -44,7 +44,7 @@
 
     <div class="offcanvas-body">
 
-        <form method="GET" action="{{ route('home') }}">
+        <form method="GET" action="{{ route('bien') }}">
 
             <div class="mb-3">
                 <label class="form-label">Ville</label>
@@ -110,7 +110,7 @@
                     Appliquer les filtres
                 </button>
 
-                <a href="{{ route('home') }}" class="btn btn-outline-secondary">
+                <a href="{{ route('bien') }}" class="btn btn-outline-secondary">
                     Réinitialiser
                 </a>
             </div>
